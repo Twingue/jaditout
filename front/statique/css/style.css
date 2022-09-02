@@ -1,0 +1,182 @@
+  /* PC */
+  div#container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 2fr 3fr  1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "article1 aside"
+        "footer footer";
+}
+
+
+html {
+    font-size: 100%;
+}
+
+
+
+div.jardin {
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+
+img.logo {
+
+    height: 5rem;
+    width: 15rem;
+}
+
+h1.toutjardin {
+
+    /*ackground-color: green;*/
+     margin-right: 50%;
+     /*margin-left: 30%;*/
+    font-size: 20px;
+    color: black;
+}
+
+* ul{
+background-color: black;
+color: black;
+display: flex;
+padding:10px 10px 10px 10px ;
+}
+
+* u {
+    color: white;
+margin-left: 10px;
+}
+
+* li {
+    display: flex;
+    margin-left: 15px;
+}
+
+* p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+aside.aside {
+background-color: gray;
+width: 40%;
+display: flex;
+    padding-left: 4rem;
+    margin-left: 4rem;
+    float: right;
+height: 28rem;
+}
+
+aside.asidetab {
+    background-color: gray;
+    width: 40%;
+    padding-left: 4rem;
+    margin-left: 4rem;
+    float: right;
+    height: 58rem;
+}
+
+aside.asidecontact {
+    background-color: gray;
+width: 40%;
+display: flex;
+    padding-left: 4rem;
+    margin-left: 4rem;
+    float: right;
+height: 31rem;
+}
+
+
+
+
+img.imgtab {
+    height: 10rem;
+    width: 10rem;
+}
+
+
+
+
+/* Mobile*/
+
+@media screen and (max-width: 768px) {
+
+    div#container {
+        /*background-color: rgb(255, 0, 0);*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 5fr 2fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "article1"
+            "footer";
+    }
+
+
+ 
+
+
+    * p {
+        font-size: 15px;
+    }
+
+
+
+ul.menu {
+flex-direction: column;
+}
+
+aside.aside {
+   /* background-color: green;*/
+    display: none;
+    }
+aside.asidetab {
+    display: none;
+}
+
+aside.asidecontact {
+    display: none;
+}
+
+
+h1.toutjardin {
+
+     margin-right: 30%;
+     margin-left: 10%;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
