@@ -39,32 +39,32 @@
     <p>colonne droite</p>
     
     
-        </aside>
+        </aside>  
     <form action="http://bienvu.net/script.php " method="post"> 
 
-        <p>*Ces zones sont obligatoires</p>
+        <p class="obligatoire">*Ces zones sont obligatoires</p>
         <p>Vos coordonnées</p>
-        <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom">
+        <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom" required title="Entrez votre nom (que des caractères entre a et z)">
         <br>
-        <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom">
+        <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom" required title="Entrez votre prénom (que des caractères entre a et z)">
         <br>
-        <p>Sexe*
-        <input type="radio" name="sexe" value="feminin" > Féminin
+        <p id="sex" >Sexe*
+        <input type="radio" name="sexe" value="feminin" required > Féminin
         <input type="radio" name="sexe" value="masculin" > Masculin
         </p>
-        <label for="naissance">Date de naissance*:</label><input type="date" name="naissance" id="naissance">
+        <label for="naissance">Date de naissance*:</label><input type="text" name="naissance" id="naissance" required title="Entrez votre date de naissance (jj/mm/aaaa)">
         <br>
-        <label for="cp">Code postal*:</label><input type="text" name="cp" id="cp">
+        <label for="cp">Code postal*:</label><input type="text" name="cp" id="cp" required title="Entrez votre code postal (5chiffres)">
         <br>
         <label for="adresse">Adresse:</label><input type="text" name="adresse" id="adresse">
         <br>
-        <label for="ville">Ville:</label><input type="text" name="ville" id="ville">
+        <label for="ville">Ville:</label><input type="text" name="ville" id="ville" title="Entrez votre ville (que des caractères entre a et z)">
         <br>
-        <label for="email">Email*:</label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" pattern="^[a-z]+$" required title="Entrez votre nom (que des caractères entre a et z)">
+        <label for="email">Email*:</label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" required title="Entrez votre email (Exemple: trucmachin@gmail.com)">
         <br>  
         <p>Votre demande</p>
         <label for="sujet">Sujet*</label>
-        <select id="sujet"> 
+        <select id="sujet" required> 
             <option value=" " selected>Veuillez sélectionner un sujet</option>
             <option value="commandes">Mes commandes</option>
             <option value="question">Question sur un produit</option>
@@ -72,11 +72,11 @@
             <option value="autres">Autres</option>
         </select>
         <br>
-        <p>Votre question* : <textarea name="questions" rows="2" cols="20"></textarea></p>
-        <input type="checkbox" name="accepte" value="traitement">* J'accepte le traitement informatique de ce formulaire
+        <p>Votre question* : <textarea name="questions" rows="2" cols="20" required></textarea></p>
+        <input type="checkbox" name="accepte" value="traitement" required>* J'accepte le traitement informatique de ce formulaire
         <br>
         <br>
-        <input type="submit">
+        <input type="submit" name="but" value="Envoyer"  id="boutton"/>
         <input type="reset" value="Annuler">
         </form> 
         <footer>
@@ -89,6 +89,7 @@
     </nav>
 </footer>
 </div>
+<script src="/front/statique/Javascript/contact.js"></script>
 </body>
 
 
