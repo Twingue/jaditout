@@ -1,112 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jarditou</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="../css/style.css">-->
+
 
     </head>
 
+    <body>
 
-<body>
-    <div id="conatiner"> 
         <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col 12 col-lg-2 pt-2  	d-none d-sm-block">
+             
+                    <img src="../images/jarditou_logo.jpg" class="img-fluid" alt="Jarditou" title="Jarditou">   
+                    </div>   
+                        <div class="col 12 col-lg-10 pt-2 d-none d-sm-block">
+                            <div class="h1 pt-2 text-right">
+                                Tout le jardin
+                            </div>
+                        </div>
+                </div>
+        
     
+        <!--
+            barre du menu
+        -->
     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--bouton sur mobile-->
+        <a class="nav-brand navbar-text text-dark h4 mt-2 mr-3">Jarditou.com</a>
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedTop" aria-controls="navbarSupportedTop" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedTop">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                <a class="nav-link text-dark"  href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="tableau.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <!--
+          </div>  barre de recherche dans la nav bar
+        -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
     
-    <div class="jardin">  
-          <img class="logo" src="../images/jarditou_logo.jpg" alt="jarditou">
-            <h1 class="toutjardin">Tout le jardin</h1>
-        </div> 
-    
+            <form class="form-inline ml-auto">
+              <div class="md-form my-0">
+                <input class="form-control" id="search" name="search" type="text" placeholder="Votre promotion" aria-label="Search">
+              </div>
+              <button class="btn btn-outline-success btn-md my-0 ml-sm-2" type="submit">Rechercher</button>
+            </form>
+        
+          </div>
+            </div>
+        </nav>
+            </div>
     </header>
     
-        <nav>
-                <ul class="menu">
-                    <li><a href="index.html"><u>Acceuil</u></a></li>
-                    <li><a href="tableau.html"><u>Tableau</u></a></li>
-                    <li><a href="contact.html"><u>Contact</u></a></li>
-                </ul>
+                <div class="row">
+            <img class="w-100" src="../images/promotion.jpg" alt="promo"> 
+               </div>
+        <!--
+        Tableau
+    -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <article>
+                        <div class="table-responsive">
+                        <table class="table table-sm table-bordered ">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Photo</th>
+                                    <th>ID</th>
+                                    <th>Catégorie</th>
+                                    <th>Libellé</th>
+                                    <th>Prix</th>
+                                    <th>Couleur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-warning"> 
+                                    <td><img 
+                                        width="100" src="../images/7.jpg" alt="image7" class="img-fluid"></td>
+                                    <td>7</td>
+                                    <td>Barbecues</td>
+                                    <td>Aramis</td>
+                                    <td>110.00€</td>
+                                    <td>Brun</td>
+                                </tr>
+                                <tr>
+                                    <td><img 
+                                        width="100" src="../images/8.jpg" alt="image8" class="img-fluid"></td>
+                                    <td>8</td>
+                                    <td>Barbecues</td>
+                                    <td>Athos</td>
+                                    <td>249.99€</td>
+                                    <td>Noir</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td >
+                                        <img 
+                                        width="100" src="../images/11.jpg" alt="image11" class="img-fluid"></td>
+                                    <td>11</td>
+                                    <td>Barbecues</td>
+                                    <td>Clatonic</td>
+                                    <td>135.90€</td>
+                                    <td>Chrome</td>
+                                </tr>
+                                <tr>
+                                    <td><img 
+                                        width="100" src="../images/12.jpg" alt="image12" class="img-fluid"></td>
+                                    <td>12</td>
+                                    <td>Barbecues</td>
+                                    <td>Camping</td>
+                                    <td>88.00€</td>
+                                    <td>Noir</td>
+
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>
+                                        <img 
+                                            width="100" src="../images/13.jpg" alt="image13" class="img-fluid"></td>
+                                    <td>13</td>
+                                    <td>Brouette</td>
+                                    <td>Green</td>
+                                    <td>49.00€</td>
+                                    <td>Verte</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </article>
+                
+                </div>
+                </div>
+            </div>
+        
+
+                        
+        <footer>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+              <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedBot" aria-controls="navbarSupportedBot" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedBot">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mention légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Plan du site</a>
+                        </li>
+            </ul>
+        </div>
         </nav>
-            <img src="../images/promotion.jpg" alt="promo" height="200" width="1900"> 
-       
-          <aside class="asidetab">
-    <p>colonne droite</p>
     
-    
-        </aside>
-          <h3>Tableau</h3>
-    <table>
-        <thead>
-          <tr>
-            <th>Photo</th>
-            <th>ID</th>
-            <th>Catégorie</th>
-            <th>Libellé</th>
-            <th>Prix</th>
-            <th>Couleur</th>
-          </tr> 
-        </thead>
-        <tbody>
-            <tr>
-                <td><img class="imgtab" src="../images/7.jpg"  alt="image7" ></td>
-                <td>7</td>
-                <td>Barbecues</td>
-                <td>Aramis</td>
-                <td>110.00€</td>
-                <td>Brun</td>
-            </tr>
-            <tr>
-                <td><img class="imgtab" src="../images/8.jpg" alt="image8" ></td>
-                <td>8</td>
-                <td>Barbecues</td>
-                <td>Athos</td>
-                <td>249.99€</td>
-                <td>Noir</td>
-            </tr>
-            <tr>
-                <td><img class="imgtab" src="../images/11.jpg"  alt="image11" ></td>
-                <td>11</td>
-                <td>Barbecues</td>
-                <td>Clatonic</td>
-                <td>135.90€</td>
-                <td>Chrome</td>
-            </tr>
-            <tr>   
-              <td><img class="imgtab" src="../images/12.jpg" alt="image12" ></td>
-              <td>12</td>
-              <td>Barbecues</td>
-              <td>Camping</td>        
-              <td>88.00€</td>
-              <td>Noir</td>
-    
-            </tr>  
-            <tr>
-              <td><img class="imgtab" src="../images/13.jpg" alt="image13" ></td>
-              <td>13</td>
-              <td>Brouette</td>
-              <td>Green</td>
-              <td>49.00€</td>
-              <td>Verte</td>
-            </tr>
-        </tbody>    
-      </table> 
-      <footer>
-<nav>
-    <ul class="menu">
-        <li><a href="mention.html"><u>Mention légales</u></a></li>
-        <li><a href="Horaire.html"><u>Horaires</u></a></li>
-        <li><a href="PlanSite.html"><u>Plan du site</u></a></li>
-    </ul>
-</nav>
-</footer>
-</div>
-</body>
+        </footer>
+                    <script
+                        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                        crossorigin="anonymous"></script>
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                        crossorigin="anonymous"></script>
+                    <script
+                        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                        crossorigin="anonymous"></script>
+
+                </body>
 
 
 
-</html>
+            </html>

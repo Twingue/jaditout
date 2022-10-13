@@ -5,65 +5,137 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jarditou</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <!--<link rel="stylesheet" href="../css/style.css">--> 
 
 
     </head>
 
 <body>  
-    <div id="conatiner"> 
+    
     <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col 12 col-lg-2 pt-2  	d-none d-sm-block">
+         
+                <img src="../images/jarditou_logo.jpg" class="img-fluid" alt="Jarditou" title="Jarditou">   
+                </div>   
+                    <div class="col 12 col-lg-10 pt-2 d-none d-sm-block">
+                        <div class="h1 pt-2 text-right">
+                            Tout le jardin
+                        </div>
+                    </div>
+            </div>
+    
 
+    <!--
+        barre du menu
+    -->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--bouton sur mobile-->
+    <a class="nav-brand navbar-text text-dark h4 mt-2 mr-3">Jarditou.com</a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedTop" aria-controls="navbarSupportedTop" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedTop">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+            <a class="nav-link text-dark"  href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="tableau.html">Tableau</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html">Contact</a>
+        </li>
+    </ul>
+    <!--
+      </div>  barre de recherche dans la nav bar
+    -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<div class="jardin">  
-      <img class="logo" src="../images/jarditou_logo.jpg" alt="jarditou">
-        <h1 class="toutjardin">Tout le jardin</h1>
-    </div> 
-
+        <form class="form-inline ml-auto">
+          <div class="md-form my-0">
+            <input class="form-control" id="search" name="search" type="text" placeholder="Votre promotion" aria-label="Search">
+          </div>
+          <button class="btn btn-outline-success btn-md my-0 ml-sm-2" type="submit">Rechercher</button>
+        </form>
+    
+      </div>
+        </div>
+    </nav>
+        </div>
 </header>
 
-    <nav>
-            <ul class="menu">
-                <li><a href="index.html"><u>Acceuil</u></a></li>
-                <li><a href="tableau.html"><u>Tableau</u></a></li>
-                <li><a href="contact.html"><u>Contact</u></a></li>
-            </ul>
-    </nav>
-        <img class="promo" src="../images/promotion.jpg" alt="promo" height="200" width="1900"> 
-   
-      <aside class="aside">
-<p>colonne droite</p>
-
-
-    </aside> 
-    <h3>Acceuil</h3>  
-    <article class="article1">
+<div class="container-fluid">
+            <div class="row">
+        <img class="w-100" src="../images/promotion.jpg" alt="promo"> 
+           </div>
+         
+        
+    
+    <div class="row">
+        <div class="col-sm-8 col-12">
+            <article>
     <h3>L'entreprise</h3>
-    <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
+    <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et <br> du paysagisme.</p>
     <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
-    <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie</p>
+    <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, <br> Péronne, Abbeville, Corbie</p>
     <h3>Qualité</h3>
-    <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
-    <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+    <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre <br> projet. Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
     </article>
 
     <article class="article2">
     <h3>Devis gratuit</h3>
-    <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>     
+    <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande <br> 
+        d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement. Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. A ab dolorem eligendi eum saepe necessitatibus quos adipisci, <br> omnis repellendus accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <br> Facilis ratione blanditiis laudantium. Placeat, maiores quis?</p>     
     </article>
+        </div>
+    <!--
+        aside
+    -->
+        <div class="col-sm-4 pt-3 pb-4 mt-2 mb-2 bg-warning col-12">
 
+     <aside class="aside">
+<p>colonne droite</p>
+    </aside> 
+    </div>
+</div>
+</div>
+
+    <!--
+        footer
+    -->
 
     <footer>
-        <nav>
-        <ul class="menu">
-            <li><a href="mention.html"><u>Mention légales</u></a></li>
-            <li><a href="Horaire.html"><u>Horaires</u></a></li>
-            <li><a href="PlanSite.html"><u>Plan du site</u></a></li>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedBot" aria-controls="navbarSupportedBot" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedBot">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mention légales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Horaires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Plan du site</a>
+                    </li>
         </ul>
+    </div>
+    </nav>
+
     </footer>
-</div> 
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 
